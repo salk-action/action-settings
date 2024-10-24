@@ -8,5 +8,5 @@ jobs:
     tag-filter:
         runs-on: ubuntu-latest
         steps:
-        - name: echo hello
+        - name: echo
           run: echo hello
