@@ -2,8 +2,12 @@ name: context
 on: workflow_dispatch
 
 jobs:
-    no-checkout:
+    context_test:
       runs-on: ubuntu-latest
       steps:
       - name: github context
         run: echo '${{ toJSON(github)}}'
+      - name: github repostiory
+        run: |
+            echo ${{ github.repostiory }}
+            echo ${{ github.event_name }}
