@@ -7,3 +7,4 @@ jobs:
     steps:
     - name: get var
       run: echo ${{ vars.level }}
+      
